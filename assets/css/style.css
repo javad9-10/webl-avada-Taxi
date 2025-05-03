@@ -1,0 +1,971 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --yellow_nav: #feba12;
+    --white_nav: #cfcfcf;
+    --yellow_form: #efb317;
+    --div_line: #dee1e4;
+    --div_cart: #bcbcbc;
+    --div_cart2: #747474;
+}
+
+main {
+    >header {
+        width: 100%;
+        height: 840.9px;
+        background-image: url(../img/avada-taxi-homepage-hero.jpg);
+        background-size: cover;
+        background-position: top;
+
+        >.hed {
+            width: 100%;
+            height: 120px;
+            gap: 12px;
+            background: rgba(0, 0, 0, 0.705);
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            >nav {
+                >ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 40px;
+
+                    >li {
+
+                        &:nth-of-type(1) {
+                            >a {
+                                color: var(--yellow_nav);
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                font-weight: bold;
+                            }
+                        }
+
+                        >a {
+                            color: var(--white_nav);
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: bold;
+                            font-size: 15px;
+                            transition: .4s;
+
+                            &:hover {
+                                color: var(--yellow_nav);
+                            }
+                        }
+                    }
+
+                    >a {
+                        background: var(--yellow_nav);
+                        padding: 8px 18px;
+                        border-radius: 4px;
+                        color: black;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: bold;
+                        font-size: 13px;
+                        transition: .4s;
+
+                        &:hover {
+                            background-color: #fef02e;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        >.para {
+            width: 100%;
+            height: 360px;
+            background-color: rgba(0, 0, 0, 0.685);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            >span {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                >h2 {
+                    color: white;
+                    font-size: 70px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    &:nth-of-type(1) {
+                        color: var(--yellow_nav);
+                    }
+                }
+            }
+
+            >h3 {
+                margin-top: 15px;
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+        }
+
+        >.form {
+            width: 1140px;
+            height: 480px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: start;
+            background-color: white;
+            position: relative;
+            top: -20px;
+            left: 150px;
+            box-shadow: 0 0 10px 0 grey;
+
+            >.cart {
+                width: 380px;
+                height: 100%;
+                background-color: #efb317;
+                border-radius: 8px 0px 0px 8px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: white;
+                }
+
+                >h3 {
+
+                    font-size: 20px;
+                    position: relative;
+                    top: 10px;
+                }
+
+                >h4 {
+                    font-size: 50px;
+                }
+
+                >h5 {
+                    color: black;
+                    font-size: 100px;
+                    position: relative;
+                    top: -30px;
+                }
+
+                >h6 {
+                    font-size: 20px;
+                    position: relative;
+                    top: -45px;
+                }
+
+
+            }
+
+            >.form1,
+            .form2 {
+
+                width: 380px;
+                height: 100%;
+                padding: 50px 30px;
+                display: flex;
+                flex-direction: column;
+                /* justify-content: start; */
+                /* align-items: center; */
+                gap: 20px;
+
+                input {
+                    width: 326px;
+                    height: 60px;
+                    padding: 20px;
+                    border: 1px solid #a8a8a8;
+                    border-radius: 8px;
+                    color: #747474;
+                    transition: .3s;
+                    outline: none;
+
+                    &:hover {
+                        border: 1px solid #cecece;
+                    }
+                }
+
+                label {
+                    color: #8f8f8f;
+                    position: relative;
+                    top: 13px;
+
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 13px;
+                    color: #747474;
+                }
+
+                >a {
+                    margin-top: 10px;
+                    width: 150px;
+                    text-align: center;
+                    background: var(--yellow_nav);
+                    padding: 12px 15px;
+                    border-radius: 4px;
+                    color: black;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                    font-size: 13px;
+                    transition: .4s;
+
+                    &:hover {
+                        background-color: #fef02e;
+
+                    }
+                }
+            }
+        }
+    }
+
+    >.part1 {
+        width: 100%;
+        height: 838.6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: #fdfdfd;
+
+        >div {
+            width: 349.7px;
+            height: 534px;
+            border: 1px solid var(--div_line);
+            border-radius: 10px;
+            background-color: #fff;
+
+
+            >div {
+                width: 100%;
+                height: 100px;
+                /* border: 1px solid black; */
+            }
+        }
+
+        >.div1,
+        .div2,
+        .div3 {
+            box-shadow: 0 0 20px .1px #ebebeb;
+
+            >.div11 {
+                height: 170px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >i {
+                    font-size: 120px;
+                    color: var(--yellow_nav);
+                }
+            }
+
+            >.div12 {
+                height: 60px;
+
+                >h3 {
+                    color: black;
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                >p {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: var(--div_cart);
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin-top: 5px;
+                }
+            }
+
+            .div13 {
+                height: 140px;
+                padding: 0 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >p {
+                    font-size: 15px;
+                    text-align: center;
+                    color: red;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: #747474;
+                }
+            }
+
+            >.div14 {
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: last baseline;
+
+                >p {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                }
+            }
+
+            >.div15 {
+                display: flex;
+                justify-content: center;
+                align-items: last baseline;
+
+                >h4 {
+                    text-align: center;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                    font-size: 60px;
+                    color: var(--yellow_nav);
+                }
+
+                >p {
+
+                    text-align: center;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                    color: var(--yellow_nav);
+                }
+            }
+        }
+    }
+
+    >.part2 {
+        width: 100%;
+        height: 328px;
+        background-color: red;
+        background-image: url(../img/avada-taxi-stats-background.jpg);
+        background-size: cover;
+        background-position: bottom;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+
+        >div {
+            width: 350px;
+            height: 208px;
+            background-color: transparent;
+            border: 1px solid #333;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            >h3 {
+                color: white;
+                font-size: 70px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            >p {
+                color: white;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                position: relative;
+                top: -7px;
+            }
+
+
+        }
+
+
+
+    }
+
+    >.part3 {
+        width: 100%;
+        height: 453.35px;
+        background-image: url(../img/avada-taxi-app-background.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >div {
+            height: 453px;
+            width: 50%;
+
+            &:first-of-type {
+                padding: 80px 70px 70px 145px;
+
+                >h2 {
+                    color: #333;
+                    font-size: 55px;
+                    font-family: sans-serif;
+                }
+
+                >p {
+                    width: 487.3px;
+                    height: 80px;
+                    margin-top: 25px;
+                    font-size: 18px;
+                    font-family: sans-serif;
+                }
+
+                .app {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 16px;
+
+                    figure {
+                        img {
+                            margin-top: 40px;
+                            width: 233.9px;
+                            height: 77.9px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+            }
+
+            &:last-of-type {
+                >figure {
+                    >img {
+                        width: 547.3px;
+                        height: 453.35px;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    >.part4 {
+        width: 100%;
+        height: 892.5px;
+
+        >.p4d1 {
+            width: 100%;
+            height: 17%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+            >h2 {
+                font-size: 55px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #333;
+            }
+        }
+
+        >.p4d2 {
+            width: 100%;
+            height: 68%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            >div {
+                width: 545px;
+                height: 470px;
+                transition: .3s;
+
+                &:hover {
+                    transform: scale(1.02);
+
+                }
+            }
+
+            >.photo1,
+            .photo2 {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+
+                >figure {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                >.cap {
+                    >a {
+                        color: #333333;
+                        font-family: sans-serif;
+                        font-size: 13px;
+                        font-weight: bold;
+                        transition: .3s;
+
+                        &:hover {
+                            color: var(--yellow_form);
+                        }
+                    }
+
+                    >.spa1 {
+                        margin-top: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: end;
+
+                        >p {
+                            color: #333;
+                            font-family: sans-serif;
+                            font-size: 12px;
+                            margin-right: 10px;
+                        }
+
+                        span {
+                            padding: 0 1px;
+
+                            a {
+                                color: #333;
+                                font-size: 12px;
+                                font-family: sans-serif;
+                                transition: .3s;
+
+                                &:hover {
+                                    color: var(--yellow_form);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        >.p4d3 {
+            width: 100%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            margin-top: 10px;
+
+            >a {
+
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 15px;
+                font-weight: bold;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: var(--yellow_nav);
+                color: black;
+                transition: .4s;
+
+                &:hover {
+                    background-color: #fef02e;
+                }
+            }
+        }
+    }
+
+    >footer {
+        width: 100%;
+        height: 1241.25px;
+        background-image: url(../img/avada-taxi2.jpg);
+        background-size: cover;
+        background-position: bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        >.footer_part1 {
+            width: 1300px;
+            height: 601px;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            >div {
+
+                width: 278.8px;
+                height: 600px;
+                background-size: cover;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            >.footer_part1_d1 {
+                background-image: url(../img/avada.jpg);
+
+                >h3,
+                h4,
+                h6 {
+                    color: white;
+                    font-size: 20px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                >h3 {
+                    position: relative;
+                    top: 30px;
+                    font-size: 20px;
+                }
+
+                >h4 {
+                    color: white;
+                    font-size: 50px;
+                    position: relative;
+                    top: 30px;
+                }
+
+                >h5 {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 100px;
+                }
+
+                >h6 {
+                    color: white;
+                    font-size: 20px;
+                }
+
+                >a {
+                    margin-top: 50px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    background: var(--yellow_nav);
+                    padding: 13px 33px;
+                    border-radius: 4px;
+                    color: black;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                    font-size: 14px;
+                    transition: .4s;
+
+                    &:hover {
+                        background-color: #fef02e;
+
+                    }
+                }
+            }
+
+            >.footer_part1_d2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+
+                >h3,
+                h4,
+                h5,
+                p {
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                i {
+                    padding-top: 40px;
+                    color: var(--yellow_nav);
+                    font-size: 120px;
+                }
+
+                >h3 {
+                    font-size: 30px;
+                    padding: 0 45px;
+                    text-align: center;
+                }
+
+                >h4 {
+                    font-size: 15px;
+                    color: #bcbcbc;
+                    padding-top: 7px;
+                }
+
+                >p {
+                    margin-top: 10px;
+                    color: #747474;
+                    font-size: 15px;
+                    text-align: center;
+                    padding: 30px;
+                }
+
+                h5 {
+                    color: #747474;
+                    font-size: 15px;
+                    padding-bottom: 10px;
+                }
+
+                .two2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+
+                    span {
+                        color: var(--yellow_form);
+                        font-size: 60px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        color: var(--yellow_form);
+                        font-size: 20px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        padding-bottom: 8px;
+                    }
+                }
+
+
+            }
+
+            >.footer_part1_d3,
+            .footer_part1_d4 {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+
+                >h3,
+                h4,
+                h5,
+                p {
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                i {
+                    padding-top: 40px;
+                    color: var(--yellow_nav);
+                    font-size: 120px;
+                }
+
+                >h3 {
+                    font-size: 30px;
+                }
+
+                >h4 {
+                    font-size: 15px;
+                    color: #bcbcbc;
+                    padding-bottom: 18px;
+                }
+
+                >p {
+                    color: #747474;
+                    font-size: 15px;
+                    text-align: center;
+                    padding: 30px;
+                }
+
+                h5 {
+                    color: #747474;
+                    font-size: 15px;
+                    padding-bottom: 10px;
+                }
+
+                .two {
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+
+                    span {
+                        color: var(--yellow_form);
+                        font-size: 60px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        color: var(--yellow_form);
+                        font-size: 20px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        padding-bottom: 8px;
+                    }
+                }
+
+
+            }
+        }
+
+        >.footer_part2 {
+            margin-top: 120px;
+            width: 1260px;
+            height: 1px;
+            background-color: #efb317;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >div {
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                border-radius: 50%;
+                border: 1px solid var(--yellow_nav);
+
+                i {
+                    font-size: 40px;
+                    color: var(--yellow_nav);
+                }
+            }
+        }
+
+        >.footer_part3 {
+            padding-top: 120px;
+        }
+
+        >.footer_part4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                margin-top: 17px;
+                position: relative;
+
+                &:hover {
+                    p {
+                        opacity: 1;
+                    }
+                }
+
+                i {
+
+                    color: #bcbcbc;
+                    transition: .3s;
+
+                    &:hover {
+                        color: #979797;
+
+                    }
+                }
+
+                .p1 {
+                    background-color: #353535e7;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #cecece;
+                    border-radius: 5px;
+                    font-size: 13px;
+                    padding: 3px 8px;
+                    position: absolute;
+                    top: -30px;
+                    left: -25px;
+                    transition: .4s;
+                    opacity: 0;
+
+                }
+
+                .p2 {
+                    color: #cecece;
+                    background-color: #353535e7;
+                    border-radius: 5px;
+                    position: absolute;
+                    font-size: 13px;
+                    padding: 3px 8px;
+                    top: -30px;
+                    left: -4px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    transition: .4s;
+                    opacity: 0;
+                }
+
+                .p3 {
+                    color: #cecece;
+                    background-color: #353535e7;
+                    border-radius: 5px;
+                    position: absolute;
+                    font-size: 13px;
+                    padding: 3px 8px;
+                    top: -30px;
+                    left: -28px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    transition: .4s;
+                    opacity: 0;
+                }
+            }
+        }
+
+        >.footer_part5 {
+            padding-top: 68px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+
+            p {
+                font-size: 13.8px;
+                color: #979797;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            span {
+                a {
+                    font-size: 13.5px;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    transition: .4s;
+
+                    &:hover {
+                        color: var(--yellow_nav);
+                    }
+                }
+            }
+        }
+
+        p {
+            color: goldenrod;
+            font-size: 20px;
+            font-family: cursive;
+        }
+    }
+
+    >.up {
+        display: block;
+        width: 50px;
+        height: 35px;
+        border-radius: 5px 5px 0px 0px;
+        background-color: #464646;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        
+        position: fixed;
+        bottom: 0px;
+        right:75px;
+
+        >.bi {
+            font-size: 16px;
+            color: white;
+            padding-top: 4px;
+            
+        }
+    }
+}
